@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /*:root {
+    --color-primary-50: 126 133 143;
+    --color-primary-100: 113 120 129;
+    --color-primary-200: 101 106 114;
+    --color-primary-300: 88 93 100;
+    --color-primary-400: 75 80 86;
+    --color-primary-500: 63 66 71;
+    --color-primary-600: 50 53 57;
+    --color-primary-700: 38 40 43;
+    --color-primary-800: 25 27 29;
+    --color-primary-900: 13 13 14;
+    --color-primary-950: 13 13 14;
+  }
+*/
+
+ /* :root {
+    --color-primary-50: #a1a1aa;
+    --color-primary-100: #a1a1aa;
+    --color-primary-200: #71717a;
+    --color-primary-300: #71717a;
+    --color-primary-400: #52525b;
+    --color-primary-500: #52525b;
+    --color-primary-600: #3f3f46;
+    --color-primary-700: #3f3f46;
+    --color-primary-800: #27272a;
+    --color-primary-900: #18181b;
+    --color-primary-950: #09090b;
+  }*/
+
+  :root {
+    --color-primary-50: 161 161 170;
+    --color-primary-100: 161 161 170;
+    --color-primary-200: 113 113 122;
+    --color-primary-300: 113 113 122;
+    --color-primary-400: 82 82 91;
+    --color-primary-500: 82 82 91;
+    --color-primary-600: 63 63 70;
+    --color-primary-700: 63 63 70;
+    --color-primary-800: 39 39 42;
+    --color-primary-900: 24 24 27;
+    --color-primary-950: 9 9 11;
+
+    --color-secondary: #b45309;
+  }
+}
+
+.dark {
+  --color-primary-50: 121 124 128;
+  --color-primary-100: 119 125 133;
+  --color-primary-200: 126 133 143;
+  --color-primary-300: 134 144 158;
+  --color-primary-400: 144 156 173;
+  --color-primary-500: 148 163 184;
+  --color-primary-600: 167 181 201;
+  --color-primary-700: 180 192 209;
+  --color-primary-800: 197 208 222;
+  --color-primary-900: 209 218 230;
+  --color-primary-950: 233 237 242;
+
+  --color-secondary: #6ee7b7;
+}
+
+h1, .h1 {
+  @apply text-3xl sm:text-4xl
+}
+
+h2, .h2 {
+  @apply text-2xl sm:text-3xl
+}
+
+h3, .h3 {
+  @apply text-xl sm:text-2xl
+}
+
+h4, .h4 {
+  @apply text-lg sm:text-xl
+}
+
+h5, .h5 {
+  @apply text-lg sm:text-xl
+}
+
+
+
+/*
+@layer base {
+  :root {
+    --color-primary-50: '#161718';
+    --color-primary-100: '#2d2e30';
+    --color-primary-200: '#434548';
+    --color-primary-300: '#5a5c60';
+    --color-primary-400: '#717478';
+    --color-primary-500: '#878b8f';
+    --color-primary-600: '#9ea2a7';
+    --color-primary-700: '#b4b9bf';
+    --color-primary-800: '#cbd0d7';
+    --color-primary-900: '#e1e7ef';
+    --color-primary-950: '#e1e7ef';
+  }
+}
+
+.dark {
+  --color-primary-50: '#e1e7ef';
+  --color-primary-100: '#e4e9f1'rgb(228 233 241);
+  --color-primary-200: '#e7ecf2';
+  --color-primary-300: '#eaeef4';
+  --color-primary-400: '#edf1f5';
+  --color-primary-500: '#f0f3f7';
+  --color-primary-600: '#f3f5f9';
+  --color-primary-700: '#f6f8fa';
+  --color-primary-800: '#f9fafc';
+  --color-primary-900: '#fcfdfd';
+  --color-primary-950: '#ffffff';
+}
+*/
