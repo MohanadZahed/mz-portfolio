@@ -6,7 +6,7 @@ export const professionalSkillsTranslations = {
     smartOutsourcing: 'Smart outsourcing',
     independentAndCollaborativeEnvironments: 'Independent and collaborative environments',
     scalability: 'Scalability',
-    reusability: 'Reusability',
+    usability: 'Usability',
     maintainability: 'Maintainability',
     organizationAndTimeManagement: 'Organization and time-management',
     continuousLearning: 'Continuous learning'

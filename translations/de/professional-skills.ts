@@ -1,13 +1,13 @@
 export const professionalSkillsTranslations = {
-    analyticalProblemSolving: 'Analytical problem-solving',
-    handlingEnterpriseSolutions: 'Handling enterprise solutions',
-    performanceOptimization: 'Performance optimization',
-    agile: 'Agile',
-    smartOutsourcing: 'Smart outsourcing',
-    independentAndCollaborativeEnvironments: 'Independent and collaborative environments',
+    analyticalProblemSolving: 'Analytische Problemlösung',
+    handlingEnterpriseSolutions: 'Umgang mit Enterprise Solutions',
+    performanceOptimization: 'Performance-Optimierung',
+    agile: 'Agiles Arbeiten',
+    smartOutsourcing: 'Smart Outsourcing',
+    independentAndCollaborativeEnvironments: 'Eigenständig & im Team',
     scalability: 'Scalability',
-    reusability: 'Reusability',
+    usability: 'Usability',
     maintainability: 'Maintainability',
-    organizationAndTimeManagement: 'Organization and time-management',
-    continuousLearning: 'Continuous learning'
+    organizationAndTimeManagement: 'Organisation und Zeitmanagement',
+    continuousLearning: 'Kontinuierliche Weiterentwicklung'
 }

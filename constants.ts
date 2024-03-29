@@ -107,27 +107,47 @@ export const projects: Project[] = [
     },
     {
         title: 'SPAR',
-        url: '/',
+        url: 'https://www.spar.hu/onlineshop/',
         description: '',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],
     },
     {
         title: 'Dachdecker',
-        url: '/',
+        url: 'https://www.deg-sued.de/dde/de/DESuedOnlineShop',
         description: '',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],
     },
     {
         title: 'supplix',
-        url: '/',
+        url: 'https://www.supplix.shop/',
         description: '',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],
     },
     {
         title: 'daw-group',
-        url: '/',
+        url: 'https://www.farbtex.de/de/unternehmen/cms-gruppe',
         description: '',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],
+    },
+    {
+        title: 'FroSTA Work Instruction',
+        description: '',
+        techStack: ['Android Native', 'Ionic', 'HTML & SCSS', 'Java', 'Angular 6', 'Jax-Rs ', 'SQL-Server'],
+    },
+    {
+        title: 'LSW Kommissionierung',
+        description: '',
+        techStack: ['Ionic', 'HTML & SCSS', 'Java', 'Jax-Rs', 'SQL-Server', 'SAP JCo'],
+    },
+    {
+        title: 'Daimler File Search',
+        description: '',
+        techStack: ['Java', 'SQL-Server', 'SAP JCo'],
+    },
+    {
+        title: 'Kamper Einrechnungsapp ',
+        description: '',
+        techStack: ['Xamarin Cross-Platform', 'C#', 'XML'],
     },
 ]
 
