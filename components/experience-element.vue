@@ -30,9 +30,3 @@ const props = defineProps<{
   experience: Experience
 }>()
 </script>
-
-<style scoped>
-/*.job-title {
-  min-width: 12.125rem;
-}*/
-</style>

@@ -1,32 +1,5 @@
 <template>
   <div>
-
-<!--    <UAccordion
-        :items="items"
-        default-open
-        multiple
-    >
-      <template #item="{ item }">
-      </template>
-
-      <template #frontend>
-        <div class="flex gap-9 flex-wrap">
-          <tech-skill-element v-for="skill in techSkillList.Frontend" :key="skill.name" :skill="skill" class="tech-skill-element "/>
-        </div>
-      </template>
-
-      <template #backend>
-        <div class="flex gap-9 flex-wrap">
-          <tech-skill-element v-for="skill in techSkillList.Backend" :key="skill.name" :skill="skill" class="tech-skill-element "/>
-        </div>
-      </template>
-
-      <template #devops>
-        <div class="flex gap-9 flex-wrap">
-          <tech-skill-element v-for="skill in techSkillList.DevOps" :key="skill.name" :skill="skill" class="tech-skill-element "/>
-        </div>
-      </template>
-    </UAccordion>-->
     <UCard>
       <template #header>
         <h3 class="text-primary-800">TECHNICAL</h3>
@@ -75,13 +48,6 @@
         </template>
       </UAccordion>
     </UCard>
-<!--    <div v-for="(value, key) in techSkillList" :key="key" class="mb-16">
-&lt;!&ndash;      <h3 class="mb-5">{{ key }}</h3>&ndash;&gt;
-      <UDivider class="mb-5" :label="key" :ui="{ label: 'text-primary-500 text-xl' }" />
-      <div class="flex gap-9 flex-wrap">
-        <tech-skill-element v-for="skill in value" :key="key" :skill="skill" class="tech-skill-element "/>
-      </div>
-    </div>-->
   </div>
 </template>
 

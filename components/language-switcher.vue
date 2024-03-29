@@ -5,16 +5,12 @@
 
 <script setup>
 const { locale, setLocale } = useI18n()
-
-console.log('locale: ', locale);
 </script>
 
 <style scoped lang="scss">
 
 button {
   @apply text-lg font-normal text-primary-200
-
-  /**/
 }
 
 button.active {

@@ -1,6 +1,5 @@
 import { Experience, Link, Project, TechSkillList, TechGroup, SkillLevel } from '~/models/general.js';
 
-
 export const menuLinks: Link[] = [
     {
         title: 'about',
@@ -42,6 +41,11 @@ export const experiences: Experience[] = [
 ]
 
 export const projects: Project[] = [
+    {
+        title: 'Sozialversicherung für Landwirtschaft, Forsten und Gartenbau [Outsourcing]',
+        description: '',
+        techStack: ['Angular', 'SAP Composable Storefront', 'Typescript', 'HTML & SCSS', 'SAP Commerce Cloud'],
+    },
     {
         title: 'mobilcom-debitel – eCare-relaunch [Outsourcing]',
         description: '',
@@ -102,7 +106,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        title: 'Spar',
+        title: 'SPAR',
         url: '/',
         description: '',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],

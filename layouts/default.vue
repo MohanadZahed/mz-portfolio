@@ -2,18 +2,6 @@
   <div class="md:grid md:grid-cols-6 gap-14 lg:gap-2 md:container mx-auto md:px-7 min-h-dvh">
     <div class="header z-50 mb-14 md:mb-0 col-span-2 sticky top-0 flex md:max-h-screen md:flex-col md:py-24 justify-between md:items-start items-center w-full md:w-auto">
       <div>
-<!--        <ClientOnly>
-          <ColorModeSelector />
-        </ClientOnly>-->
-
-<!--        <select v-model="locale">
-          <option value="en">en</option>
-          <option value="de">de</option>
-        </select>
-        <button @click="setLocale('en')">en</button>
-        <button @click="setLocale('de')">de</button>-->
-
-        <!--      <h1 class="text-primary-900 double-pica">Mohanad Zahed</h1>-->
         <div class="logo-wrapper">
           <Logo />
           <h2 class="mt-3 md:mb-10 text-lg font-normal sm:text-xl md:whitespace-nowrap">{{ $t('position') }}</h2>
@@ -28,7 +16,7 @@
 
         <a
             class="font-medium leading-tight text-primary-950 hover:text-secondary focus-visible:text-secondary group/link text-base"
-            href="/resume.pdf"
+            :href="pdf"
             target="_blank"
             rel="noreferrer noopener"
         > {{ $t('showCV')}}
@@ -45,17 +33,9 @@
 </template>
 
 <script setup>
-const { locale, setLocale } = useI18n()
-/*// TODO: REMOVE
-// eslint-disable-next-line no-console
-console.log('locale: ', locale);
-const t = computed(() => {
-  return locale
-})
+const { locale } = useI18n()
+const pdf = computed(() => locale.value === 'de' ? '/MohanadZahed_Lebenslauf.pdf' : '/MohanadZahed_CV_en.pdf');
 
-// TODO: REMOVE
-// eslint-disable-next-line no-console
-console.log('t : ', t );*/
 useHead({
   titleTemplate: '%s - Mohanad Zahed',
   link: [
