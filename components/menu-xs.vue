@@ -1,7 +1,7 @@
 <template>
   <nav class="font-mono z-50 fixed inset-x-0 bottom-0 w-full rounded-t-xl bg-sky-200">
-    <ul class="flex justify-evenly items-center ">
-      <li v-for="link in menuLinks" :key="link.title">
+    <ul class="flex items-center">
+      <li v-for="link in menuLinks" :key="link.title" class="flex-1">
         <menu-link-xs :link="link"/>
       </li>
     </ul>

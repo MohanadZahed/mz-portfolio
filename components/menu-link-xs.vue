@@ -14,10 +14,18 @@ const props = defineProps({
 <style scoped lang="scss">
 a {
   &.active {
-
+    background: radial-gradient(circle, rgba(235, 238, 222, 1) 0%, rgba(235, 238, 222, 0) 80%);
     .nav-text,
     .ui-icon {
-      @apply text-primary-950;
+      @apply text-secondary;
+    }
+  }
+}
+
+.dark {
+  a {
+    &.active {
+      background: radial-gradient(circle, rgba(29,58,72,1) 0%, rgba(235, 238, 222, 0) 80%);
     }
   }
 }

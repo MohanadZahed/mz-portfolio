@@ -56,7 +56,7 @@ export const projects: Project[] = [
     {
         title: 'Framework-agnostic integration for Emporix and Vue Storefront Middleware',
         description: '',
-        techStack: ['Nuxt.js', 'Typescript', 'HTML & SCSS'],
+        techStack: ['Nuxt.js', 'Typescript'],
     },
     {
         title: 'HABA pro / HABA play – Performance optimization',
