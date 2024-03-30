@@ -14,14 +14,23 @@ const props = defineProps({
 <style scoped lang="scss">
 a {
   &:hover,
-  &:focus-visible,
-  &.active {
+  &:focus-visible {
     .nav-indicator {
       @apply bg-primary-950 w-16;
     }
 
     .nav-text {
       @apply text-primary-950;
+    }
+  }
+
+  &.active {
+    .nav-indicator {
+      @apply bg-secondary w-16;
+    }
+
+    .nav-text {
+      @apply text-secondary;
     }
   }
 }
