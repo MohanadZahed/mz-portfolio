@@ -5,6 +5,6 @@ export const globalTranslations = {
     contact: 'Kontakt',
     position: 'Senior Frontend Entwickler',
     moto: 'I build pixel-perfect, engaging, and accessible digital experiences.',
-    viewAllProjects: 'View all projects',
+    viewAllProjects: 'Alle Projekte',
     showCV: 'Lebenslauf'
 }
