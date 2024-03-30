@@ -4,7 +4,7 @@
     <div
         class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/50 dark:lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
     <div class="z-10 sm:col-span-6">
-      <h3 class="font-medium leading-snug text-slate-200">
+      <div class="font-medium leading-snug text-slate-200">
         <a
             v-if="project.url"
             class="font-medium leading-tight text-primary-800 hover:text-secondary focus-visible:text-secondary  group/link text-base"
@@ -18,6 +18,7 @@
             class="inline-flex items-baseline font-medium leading-tight text-primary-800 hover:text-secondary focus-visible:text-secondary  group/link text-base"
             rel="noreferrer noopener"
             :aria-label="project.title"
+            @click="openVideoModal(project)"
         >
           <project-element-header :project="project" />
         </button>
@@ -29,7 +30,7 @@
         >
           <project-element-header :project="project" />
         </div>
-      </h3>
+      </div>
       <p class="mt-2 text-sm leading-normal">{{ project.description }}</p>
       <ul v-if="project.links" class="mt-2 flex flex-wrap" aria-label="Related links">
         <li v-for="link in project.links" :key="link.title" class="mr-4"><a
@@ -54,6 +55,8 @@
         </li>
       </ul>
     </div>
+
+    <video-modal v-model="isOpen" :video="video" :video-title="videoTitle"/>
   </div>
 </template>
 
@@ -64,5 +67,15 @@ import type { Project } from '~/models/general';
 const props = defineProps<{
   project: Project
 }>()
+
+const isOpen = ref(false)
+const video = ref('')
+const videoTitle = ref('')
+
+const openVideoModal = (project: Project) => {
+  video.value = project.video;
+  videoTitle.value = project.videoTitle;
+  isOpen.value = true;
+}
 </script>
 

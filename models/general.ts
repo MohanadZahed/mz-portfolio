@@ -11,6 +11,7 @@ export interface Project {
     url?: string;
     links?: Link[];
     video?: string;
+    videoTitle?: string;
 }
 
 export interface Experience {

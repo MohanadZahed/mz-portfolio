@@ -49,6 +49,8 @@ export const projects: Project[] = [
     {
         title: 'mobilcom-debitel – eCare-relaunch [Outsourcing]',
         description: '',
+        video: '/Ecare-Relaunch-usecase.mp4',
+        videoTitle: 'mobilcom-debitel E-care Relaunch Usecase',
         techStack: ['Angular', 'Typescript', 'HTML & SCSS', 'GraphQL', 'Nx'],
     },
     {
