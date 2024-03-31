@@ -2,6 +2,9 @@ export interface Link {
     title: string;
     url: string;
     icon?: string;
+    isInternal?: boolean;
+    isTargetBlank?: boolean;
+    rel?: string;
 }
 
 export interface Project {

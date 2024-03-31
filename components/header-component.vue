@@ -16,19 +16,7 @@
           <language-switcher />
         </div>
 
-        <a
-            class="font-medium leading-tight text-primary-950 hover:text-secondary focus-visible:text-secondary group/link text-base"
-            :href="pdf"
-            target="_blank"
-            rel="noreferrer noopener"
-        >
-          {{ $t('showCV')}}
-          <UIcon
-              name="i-carbon-arrow-up-right"
-              dynamic
-              class="h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 group-focus-visible/link:-translate-y-0.5 group-focus-visible/link:translate-x-0.5 motion-reduce:transition-none"
-          />
-        </a>
+        <link-compoent :link="{title: $t('showCV'), url: pdf, isTargetBlank: true, rel: 'noreferrer noopener'}"/>
       </div>
     </div>
 
