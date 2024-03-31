@@ -57,8 +57,6 @@ h5, .h5 {
 }
 
 a {
-  transition: color 0.3s ease-out;
-  &:hover {
-    @apply text-secondary;
-  }
+  transition: all .3s ease-out;
+  @apply font-medium leading-tight text-primary-950 hover:text-secondary focus-visible:text-secondary hover:underline focus-visible:underline text-base;
 }
