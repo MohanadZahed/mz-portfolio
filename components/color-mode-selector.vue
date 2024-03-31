@@ -1,6 +1,5 @@
 <template>
-    <button @click="toggleMode"
-      class="text-4xl md:text-base">
+    <button @click="toggleMode" class="text-4xl md:text-base">
       <div class="star" :class="{ 'moon': currentMode === 'dark', 'sun': currentMode === 'light'}"></div>
     </button>
 </template>
@@ -25,7 +24,7 @@ if(colorMode.preference === 'system') {
 
 const nextMode = computed(() => {
   const currentModeIndex = modes.indexOf(colorMode.preference)
-  let nextModeIndex = null
+  let nextModeIndex
 
   if (currentModeIndex + 1 === modes.length) {
     nextModeIndex = 0
@@ -59,17 +58,15 @@ button {
 
 .moon {
   background-color: #94a3b8;
-  box-shadow: 5px 0 10px 3px rgba(229,229,229,0.3),
+  box-shadow: 0 0 10px 3px rgba(229,229,229,0.3),
   0 0 10px 2px rgba(229,229,229,0.3),
-  5px 0 10px 3px rgba(229,229,229,0.3),
-  0px 0 3px 2px rgba(229,229,229,0.3);
+  0 0 10px 3px rgba(229,229,229,0.3),
+  0 0 3px 2px rgba(229,229,229,0.3);
 
   &:hover {
     background-color: #B0BCCD;
-    box-shadow: 5px 0 10px 8px rgba(229,229,229,0.3),
-    0 0 10px 7px rgba(229,229,229,0.3),
-    5px 0 10px 3px rgba(229,229,229,0.3),
-    0px 0 3px 2px rgba(229,229,229,0.3);
+    transform: scale(1);
+    animation: pulse-moon 2s infinite;
   }
 }
 
@@ -90,14 +87,67 @@ button {
 
 .sun {
   background-color: #ffffc7;
-  box-shadow: 5px 0 10px 3px rgb(253 255 177 / 30%), 0 0 10px 2px rgb(244 255 194 / 30%), 5px 0 10px 3px rgb(245 255 170 / 30%), 0px 0 3px 2px rgb(229 229 229 / 30%);
+  box-shadow: 0 0 10px 3px rgb(253 255 177 / 30%),
+  0 0 10px 2px rgb(244 255 194 / 30%),
+  0 0 10px 3px rgb(245 255 170 / 30%),
+  0 0 3px 2px rgb(229 229 229 / 30%);
 
   &:hover {
     background-color: #ffffda;
-    box-shadow: 5px 0 10px 8px rgb(253 255 177 / 30%),
-    0 0 10px 7px rgb(244 255 194 / 30%),
-    5px 0 10px 3px rgb(245 255 170 / 30%),
-    0px 0 3px 2px rgb(229 229 229 / 30%);
+    transform: scale(1);
+    animation: pulse-sun 2s infinite;
+  }
+}
+
+@keyframes pulse-moon {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 3px rgba(229,229,229,0.7),
+    0 0 10px 2px rgba(229,229,229,0.3),
+    0 0 10px 3px rgba(229,229,229,0.3),
+    0 0 3px 2px rgba(229,229,229,0.3);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 10px rgba(229,229,229,0),
+    0 0 10px 9px rgba(229,229,229,0),
+    0 0 10px 10px rgba(229,229,229,0),
+    0 0 3px 9px rgba(229,229,229,0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 3px rgba(229,229,229,0),
+    0 0 10px 2px rgba(229,229,229,0),
+    0 0 10px 3px rgba(229,229,229,0),
+    0 0 3px 2px rgba(229,229,229,0);
+  }
+}
+
+@keyframes pulse-sun {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 3px rgb(253 255 177 / 70%),
+    0 0 10px 2px rgb(244 255 194 / 30%),
+    0 0 10px 3px rgb(245 255 170 / 30%),
+    0 0 3px 2px rgb(229 229 229 / 30%);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 15px rgb(253 255 177 / 0),
+    0 0 10px 14px rgb(244 255 194 /0),
+    0 0 10px 15px rgb(245 255 170 / 0),
+    0 0 3px 14px rgb(229 229 229 / 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px 3px rgb(253 255 177 / 0),
+    0 0 10px 2px rgb(244 255 194 / 0),
+    0 0 10px 3px rgb(245 255 170 / 0),
+    0 0 3px 2px rgb(229 229 229 / 0);
   }
 }
 
