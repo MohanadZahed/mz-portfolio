@@ -5,10 +5,12 @@
   </NuxtLink>
 </template>
 
-<script setup>
-const props = defineProps({
-  link: Object
-})
+<script setup lang="ts">
+import type { MenuLink } from '~/models/general';
+
+const props = defineProps<{
+  link: MenuLink
+}>()
 </script>
 
 <style scoped lang="scss">

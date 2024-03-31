@@ -1,5 +1,6 @@
 export const experienceTranslations = {
     experience: 'Experience',
+    'experience-xs': 'Experience',
     mw: {
         activity1: 'Execute web development projects, specializing in e-commerce and CMS platforms such as SAP Commerce Cloud, composable storefront/spartacus, and Angular 17.',
         activity2: 'Working for different companies via smart outsourcing.',

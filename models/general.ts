@@ -1,10 +1,14 @@
 export interface Link {
     title: string;
     url: string;
-    icon?: string;
     isInternal?: boolean;
     isTargetBlank?: boolean;
     rel?: string;
+}
+
+export interface MenuLink extends Link {
+    icon: string;
+    xsTitle?: string;
 }
 
 export interface Project {

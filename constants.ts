@@ -1,6 +1,6 @@
-import { Experience, Link, Project, TechSkillList, TechGroup, SkillLevel } from '~/models/general.js';
+import { Experience, Project, TechSkillList, TechGroup, SkillLevel, MenuLink } from '~/models/general.js';
 
-export const menuLinks: Link[] = [
+export const menuLinks: MenuLink[] = [
     {
         title: 'about',
         url: '/',
@@ -8,6 +8,7 @@ export const menuLinks: Link[] = [
     },
     {
         title: 'experience',
+        xsTitle: 'experience-xs',
         url: '/experience',
         icon: 'i-uil-suitcase'
     },
