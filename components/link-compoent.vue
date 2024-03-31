@@ -36,7 +36,7 @@ const props = defineProps<{
 
 .link-text {
   transition: all .3s ease-out;
-  @apply font-medium leading-tight text-primary-950 hover:text-secondary focus-visible:text-secondary hover:underline focus-visible:underline text-base;
+  @apply font-medium text-primary-950 hover:text-secondary focus-visible:text-secondary hover:underline focus-visible:underline text-base;
 }
 
 </style>
