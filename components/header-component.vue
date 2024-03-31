@@ -2,7 +2,7 @@
   <header
       class="z-50 mb-10 md:mb-0 col-span-2 sticky top-0  md:max-h-screen  md:py-24  w-full md:w-auto"
   >
-    <div class="header-upper-part justify-between md:items-start items-center md:flex-col flex md:h-full" :class="{ 'is-hidden': isHidden }">
+    <div class="header-upper-part rounded-b-lg justify-between md:items-start items-center md:flex-col flex md:h-full" :class="{ 'is-hidden': isHidden, 'not-on-top': !isOnTop }">
       <div>
         <div class="logo-wrapper">
           <Logo />
@@ -37,14 +37,18 @@ onMounted(() => {
 })
 
 let isHidden = ref(false);
+let isOnTop = ref(true);
 let lastScrollTop = 0
+const threshold = 35;
 
 const handleScroll = () => {
   const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+  isOnTop.value = currentScrollPosition <= threshold;
+
   if (currentScrollPosition < 0) {
     return
   }
-  if (Math.abs(currentScrollPosition - lastScrollTop) < 60) {
+  if (Math.abs(currentScrollPosition - lastScrollTop) < threshold) {
     return
   }
   isHidden.value = currentScrollPosition > lastScrollTop
@@ -59,8 +63,6 @@ const handleScroll = () => {
     transform: scale(0.8);
     margin-left: -21px;
   }
-
-
 }
 
 @media (max-width: 767px) {
@@ -75,10 +77,14 @@ const handleScroll = () => {
   }
 
   .header-upper-part {
-    transition: transform 0.3s ease-out;
+    transition: transform  0.3s ease-out, box-shadow  0.3s ease-out;
 
     &.is-hidden {
       transform: translateY(-100%);
+    }
+
+    &.not-on-top {
+      box-shadow: 0 5px 7px -2px rgba(0,0,0,0.84);
     }
   }
 
