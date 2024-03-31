@@ -1,12 +1,12 @@
 <template>
   <div class="relative">
-    <div class="flex items-center double-pica text-primary-900">
+    <NuxtLink to="/" class="flex items-center double-pica text-primary-900">
       <div class="text-end">
         <h1>Mohana</h1>
         <h1>Zahe</h1>
       </div>
       <h1 class="d">D</h1>
-    </div>
+    </NuxtLink>
     <ClientOnly>
       <ColorModeSelector class="absolute bottom-1"/>
     </ClientOnly>
