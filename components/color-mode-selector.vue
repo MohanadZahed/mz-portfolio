@@ -63,10 +63,12 @@ button {
   0 0 10px 3px rgba(229,229,229,0.3),
   0 0 3px 2px rgba(229,229,229,0.3);
 
-  &:hover {
-    background-color: #B0BCCD;
-    transform: scale(1);
-    animation: pulse-moon 2s infinite;
+  @media (min-width: 768px) {
+    &:hover {
+      background-color: #B0BCCD;
+      transform: scale(1);
+      animation: pulse-moon 2s infinite;
+    }
   }
 }
 
@@ -92,10 +94,12 @@ button {
   0 0 10px 3px rgb(245 255 170 / 30%),
   0 0 3px 2px rgb(229 229 229 / 30%);
 
-  &:hover {
-    background-color: #ffffda;
-    transform: scale(1);
-    animation: pulse-sun 2s infinite;
+  @media (min-width: 768px) {
+    &:hover {
+      background-color: #ffffda;
+      transform: scale(1);
+      animation: pulse-sun 2s infinite;
+    }
   }
 }
 

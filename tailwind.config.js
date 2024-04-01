@@ -21,7 +21,7 @@ module.exports = {
         extend: {
             colors: {
                 primary: 'rgb(var(--color-primary) / <alpha-value>)',
-                secondary: 'var(--color-secondary)'
+                secondary: 'rgb(var(--color-secondary) / <alpha-value>)'
             }
         },
     },

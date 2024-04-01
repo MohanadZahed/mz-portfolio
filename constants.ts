@@ -43,25 +43,25 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
     {
-        title: 'Sozialversicherung für Landwirtschaft, Forsten und Gartenbau [Outsourcing]',
-        description: '',
+        title: 'Sozialversicherung für Landwirtschaft, Forsten und Gartenbau',
+        description: 'svlfg',
         techStack: ['Angular', 'SAP Composable Storefront', 'Typescript', 'HTML & SCSS', 'SAP Commerce Cloud'],
     },
     {
-        title: 'mobilcom-debitel – eCare-relaunch [Outsourcing]',
-        description: '',
+        title: 'mobilcom-debitel – eCare-relaunch',
+        description: 'mobilcom',
         video: '/Ecare-Relaunch-usecase.mp4',
         videoTitle: 'mobilcom-debitel E-care Relaunch Usecase',
         techStack: ['Angular', 'Typescript', 'HTML & SCSS', 'GraphQL', 'Nx'],
     },
     {
-        title: 'Framework-agnostic integration for Emporix and Vue Storefront Middleware',
-        description: '',
-        techStack: ['Nuxt.js', 'Typescript'],
+        title: 'Agnostic integration for Emporix and Vue Storefront Middleware',
+        description: 'emporix',
+        techStack: ['Nuxt.js', 'Typescript', 'Alokai', 'Emporix'],
     },
     {
-        title: 'HABA pro / HABA play – Performance optimization',
-        description: '',
+        title: 'HABA pro | HABA play',
+        description: 'haba',
         techStack: ['Angular', 'SAP Composable Storefront', 'Typescript', 'HTML & SCSS', 'SAP Commerce Cloud'],
         links: [
             {
@@ -75,8 +75,8 @@ export const projects: Project[] = [
         ]
     },
     {
-        title: 'ottos.ch | sherpaoutdoor [Outsourcing]',
-        description: '',
+        title: 'ottos.ch | sherpa outdoor',
+        description: 'ottos',
         techStack: ['Angular', 'SAP Composable Storefront', 'Typescript', 'HTML & SCSS', 'SAP Commerce Cloud'],
         links: [
             {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     },
     {
         title: 'mein schöner Garten | Landgard | Ordertage',
-        description: '',
+        description: 'landgard',
         techStack: ['Angular', 'SAP Composable Storefront', 'Typescript', 'HTML & SCSS', 'SAP Commerce Cloud'],
         links: [
             {
@@ -111,25 +111,25 @@ export const projects: Project[] = [
     {
         title: 'SPAR',
         url: 'https://www.spar.hu/onlineshop/',
-        description: '',
+        description: 'spar',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],
     },
     {
         title: 'Dachdecker',
         url: 'https://www.deg-sued.de/dde/de/DESuedOnlineShop',
-        description: '',
+        description: 'dachdecker',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],
     },
     {
         title: 'supplix',
         url: 'https://www.supplix.shop/',
-        description: '',
+        description: 'supplix',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],
     },
     {
         title: 'daw-group',
         url: 'https://www.farbtex.de/de/unternehmen/cms-gruppe',
-        description: '',
+        description: 'daw',
         techStack: ['Javascript', 'jQuery', 'HTML & Less', 'SAP Commerce Cloud', 'Spring Boot'],
     },
     {

@@ -4,7 +4,7 @@ export const aboutTranslations = {
     address: 'Hamburg, Germany',
     education: 'Computer Science B.Sc. at Al-Ahliyya Amman University, 2014 (officially recognized in Germany)',
     languages: 'Languages',
-    germanLan: '• German (Conversational)',
+    germanLan: '• German (Negotiable)',
     englishLan: '• English (Negotiable)',
     arabicLan: '• Arabic (Mother tongue)',
 }

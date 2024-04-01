@@ -1,6 +1,6 @@
 <template>
   <div
-      class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+      class="group relative grid pb-1 transition-all sm:grid-cols-6 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
     <div
         class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/50 dark:lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
     <div class="z-10 sm:col-span-6">
@@ -31,7 +31,7 @@
           <project-element-header :project="project" />
         </div>
       </div>
-      <p class="mt-2 text-sm leading-normal">{{ project.description }}</p>
+      <p class="mt-2 text-sm leading-normal hyphens-auto enable-link-style" v-html="$t(project.description)"></p>
       <ul v-if="project.links" class="mt-2 flex flex-wrap" aria-label="Related links">
         <li v-for="link in project.links" :key="link.title" class="mr-4"><a
             class="relative mt-2 inline-flex items-center text-sm font-medium text-primary-950 hover:text-secondary focus-visible:text-secondary"
@@ -49,7 +49,7 @@
       <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
         <li v-for="tech in project.techStack" :key="tech" class="mr-1.5 mt-2">
           <div
-              class="flex items-center rounded-full bg-amber-300/20 dark:bg-emerald-400/10 px-3 py-1 text-xs font-medium leading-5 text-secondary ">
+              class="flex items-center rounded-full bg-secondary/20 dark:bg-secondary/10 px-3 py-1 text-xs font-medium leading-5 text-secondary ">
             {{ tech }}
           </div>
         </li>
@@ -79,3 +79,12 @@ const openVideoModal = (project: Project) => {
 }
 </script>
 
+
+<style lang="scss">
+.enable-link-style {
+  a {
+    transition: all .3s ease-out;
+    @apply font-medium text-primary-950 hover:text-secondary focus-visible:text-secondary hover:underline focus-visible:underline;
+  }
+}
+</style>

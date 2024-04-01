@@ -4,7 +4,7 @@ export const aboutTranslations = {
     address: 'Hamburg, Deutschland',
     education: 'Bachelor in Informatik, Al-Ahliyya Amman Universität, 2014 (offiziell anerkannt in Deutschland)',
     languages: 'Sprachen',
-    germanLan: '• Deutsch (Konversationssicher)',
+    germanLan: '• Deutsch (Verhandlungssicher)',
     englishLan: '• Englisch (Verhandlungssicher)',
     arabicLan: '• Arabisch (Muttersprachlich)',
 }
