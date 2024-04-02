@@ -6,4 +6,18 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+  i18n: {
+    strategy: 'no_prefix',
+    defaultLocale: 'en',
+    locales: [
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'de',
+        name: 'Deutsch'
+      },
+    ]
+  }
 })
