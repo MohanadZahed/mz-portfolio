@@ -8,7 +8,7 @@ const { locale, setLocale } = useI18n()
 const selectedLang = ref('');
 setTimeout(() => {
   selectedLang.value = locale.value;
-}, 500);
+}, 100);
 
 watch(locale, () => {
   selectedLang.value = locale.value;
