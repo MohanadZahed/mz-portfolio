@@ -10,7 +10,10 @@ const { locale, setLocale } = useI18n()
 // eslint-disable-next-line no-console
 console.log('init locale: ', locale.value);
 const selectedLang = ref('');
-selectedLang.value = locale.value;
+setTimeout(() => {
+  selectedLang.value = locale.value;
+}, 1000);
+
 watch(locale, (newValue, oldValue) => {
   console.log('oldValue:', oldValue)
   console.log('newValue:', newValue)
