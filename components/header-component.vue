@@ -2,21 +2,28 @@
   <header
       class="z-50 mb-10 md:mb-0 col-span-2 sticky top-0  md:max-h-screen  md:py-24  w-full md:w-auto"
   >
-    <div class="header-upper-part rounded-b-lg justify-between md:items-start items-center md:flex-col flex md:h-full" :class="{ 'is-hidden': isHidden, 'not-on-top': !isOnTop }">
+    <div class="header-upper-part py-2 md:py-0 rounded-b-lg justify-between md:items-start items-center md:flex-col flex md:h-full" :class="{ 'is-hidden': isHidden, 'not-on-top': !isOnTop }">
       <div>
         <div class="logo-wrapper">
           <Logo />
-          <h2 class="mt-3 md:mb-10 text-lg font-normal sm:text-xl md:whitespace-nowrap">{{ $t('position') }}</h2>
+          <h2 class="mt-2 sm:mt-3 md:mb-10 text-base sm:text-lg md:text-xl font-normal md:whitespace-nowrap">{{ $t('position') }}</h2>
         </div>
         <Menu class="hidden md:block mb-10"/>
       </div>
 
       <div class="md:mt-auto">
-        <div class="mb-3 text-end md:text-start">
-          <language-switcher />
+        <div class="mb-2 text-end md:text-start flex gap-2.5 md:block flex-row-reverse">
+          <ClientOnly>
+            <div class="md:mb-2">
+              <ColorModeSelector />
+            </div>
+          </ClientOnly>
+          <div>
+            <language-switcher />
+          </div>
         </div>
 
-        <link-compoent :link="{title: $t('showCV'), url: pdf, isTargetBlank: true, rel: 'noreferrer noopener'}"/>
+        <link-compoent :link="{title: $t('showCV'), url: pdf, isTargetBlank: true, rel: 'noreferrer noopener'}" class="whitespace-nowrap" />
       </div>
     </div>
 
@@ -58,13 +65,6 @@ const handleScroll = () => {
 
 
 <style scoped lang="scss">
-@media (max-width: 640px) {
-  .logo-wrapper {
-    transform: scale(0.8);
-    margin-left: -21px;
-  }
-}
-
 @media (max-width: 767px) {
   .header-upper-part {
     @apply bg-sky-200 px-3
