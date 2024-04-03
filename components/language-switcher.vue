@@ -5,6 +5,14 @@
 
 <script setup>
 const { locale, setLocale } = useI18n()
+
+// TODO: REMOVE
+// eslint-disable-next-line no-console
+console.log('init locale: ', locale.value);
+watch(locale, (newValue, oldValue) => {
+  console.log('oldValue:', oldValue)
+  console.log('newValue:', newValue)
+})
 </script>
 
 <style scoped lang="scss">
