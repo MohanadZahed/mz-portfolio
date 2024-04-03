@@ -31,7 +31,7 @@
           <project-element-header :project="project" />
         </div>
       </div>
-      <p class="mt-2 text-sm leading-normal hyphens-auto enable-link-style" v-html="$t(project.description)"></p>
+      <project-element-description :content="$t(project.description)"/>
       <ul v-if="project.links" class="mt-2 flex flex-wrap" aria-label="Related links">
         <li v-for="link in project.links" :key="link.title" class="mr-4"><a
             class="relative mt-2 inline-flex items-center text-sm font-medium text-primary-950 hover:text-secondary focus-visible:text-secondary"

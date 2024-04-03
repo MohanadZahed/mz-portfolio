@@ -1,6 +1,16 @@
 <template>
   <h3 class="mb-5 text-primary-800">{{ $t('about') }}</h3>
-  <p class="pb-8" v-html="$t('description')"></p>
+  <p class="pb-8">
+    {{ $t('description1') }}
+    <br>
+    <br>
+    {{ $t('description2') }}
+    <br>
+    <br>
+    {{ $t('description3') }}
+    <br>
+    {{ $t('description4') }}
+  </p>
   <div class="grid gap-2">
     <div class="info-wrapper">
       <UIcon name="i-icon-park-outline-international" dynamic class='icon' />
