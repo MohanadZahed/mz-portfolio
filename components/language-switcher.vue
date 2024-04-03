@@ -5,18 +5,12 @@
 
 <script setup>
 const { locale, setLocale } = useI18n()
-
-// TODO: REMOVE
-// eslint-disable-next-line no-console
-console.log('init locale: ', locale.value);
 const selectedLang = ref('');
 setTimeout(() => {
   selectedLang.value = locale.value;
-}, 1000);
+}, 500);
 
-watch(locale, (newValue, oldValue) => {
-  console.log('oldValue:', oldValue)
-  console.log('newValue:', newValue)
+watch(locale, () => {
   selectedLang.value = locale.value;
 })
 </script>
