@@ -4,17 +4,7 @@
 </template>
 
 <script setup>
-const { locale, setLocale, locales } = useI18n()
-
-if(!useCookieLocale().value) {
-  const browserLang = navigator?.language;
-  if(browserLang && browserLang !== 'en') {
-    const doesBrowserLangExist = locales.value.some(localeEl => localeEl.code === browserLang);
-    if(doesBrowserLangExist) {
-      setLocale(browserLang);
-    }
-  }
-}
+const { locale, setLocale } = useI18n()
 </script>
 
 <style scoped lang="scss">

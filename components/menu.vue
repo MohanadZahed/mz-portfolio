@@ -1,5 +1,5 @@
 <template>
-  <nav class="font-mono">
+  <nav>
     <ul class="flex flex-col">
       <li v-for="link in menuLinks" :key="link.title">
         <menu-link :link="link"/>
