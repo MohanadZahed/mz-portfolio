@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink v-if="link.isInternal" :to="link.url" class="link-text group/link">
+  <NuxtLink v-if="link.isInternal" :to="localPath(link.url)" class="link-text group/link">
     {{ link.title }}
     <UIcon name="i-carbon-arrow-up-right" dynamic class="link-arrow-icon"/>
   </NuxtLink>
@@ -22,6 +22,7 @@
 
 <script setup lang="ts">
 import type { Link } from '~/models/general';
+const localPath = useLocalePath();
 
 const props = defineProps<{
   link: Link,

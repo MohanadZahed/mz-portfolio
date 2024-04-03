@@ -7,7 +7,13 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   i18n: {
-    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    },
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
     locales: [
       {
         code: 'en',
