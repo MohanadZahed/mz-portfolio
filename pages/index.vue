@@ -12,4 +12,7 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  title: 'about'
+})
 </script>

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   i18n: {
+    baseUrl: 'https://mz-portfolio-lyart.vercel.app',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -17,10 +18,12 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
+        iso: 'en-US',
         name: 'English'
       },
       {
         code: 'de',
+        iso: 'de-DE',
         name: 'Deutsch'
       },
     ]

@@ -7,10 +7,38 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+const { t } = useI18n()
+const route = useRoute()
+
+const i18nHead = useLocaleHead({
+  addDirAttribute: true,
+  identifierAttribute: 'id',
+  addSeoAttributes: true
+})
+
+const description = computed(() => t('seo.description'));
+const title = computed(() => `Mohanad Zahed | ${t(route.meta.title)}`);
+
+  useSeoMeta({
+  description: description,
+  ogTitle: title,
+  ogDescription: description,
+  ogImage: '/logo.png',
+  ogUrl: 'https://mz-portfolio-lyart.vercel.app',
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterImage: '/logo.png',
+  twitterCard: 'summary'
+})
+
 useHead({
-  titleTemplate: '%s - Mohanad Zahed',
+  htmlAttrs: {
+    lang: i18nHead.value.htmlAttrs.lang,
+  },
+  titleTemplate: title,
   link: [
+    ...(i18nHead.value.link || []),
     {
       rel: 'preconnect',
       href: 'https://fonts.googleapis.com'
@@ -24,8 +52,14 @@ useHead({
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap',
       crossorigin: ''
+    },
+    {
+      rel: 'icon',
+      type: 'image/ico',
+      href: '/favicon.ico'
     }
-  ]
+  ],
+  meta: [...(i18nHead.value.meta || [])]
 })
 </script>
 

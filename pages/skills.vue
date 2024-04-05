@@ -30,4 +30,8 @@
 <script setup lang="ts">
 import { professionalSkillsTranslations } from '~/translations/en/professional-skills';
 import { webDevelopmentTools } from '~/constants';
+
+definePageMeta({
+  title: 'skills'
+})
 </script>
