@@ -1,10 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxtjs/i18n'],
+  modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxtjs/sitemap'],
   css: ['~/assets/css/main.scss'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
+  },
+  site: {
+    url: 'https://mz-portfolio-lyart.vercel.app',
   },
   i18n: {
     baseUrl: 'https://mz-portfolio-lyart.vercel.app',
