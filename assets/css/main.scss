@@ -1,22 +1,17 @@
-@tailwind base;
-@tailwind utilities;
+:root {
+  --color-primary-50: 161 161 170;
+  --color-primary-100: 161 161 170;
+  --color-primary-200: 113 113 122;
+  --color-primary-300: 113 113 122;
+  --color-primary-400: 82 82 91;
+  --color-primary-500: 82 82 91;
+  --color-primary-600: 63 63 70;
+  --color-primary-700: 63 63 70;
+  --color-primary-800: 39 39 42;
+  --color-primary-900: 24 24 27;
+  --color-primary-950: 9 9 11;
 
-@layer base {
-  :root {
-    --color-primary-50: 161 161 170;
-    --color-primary-100: 161 161 170;
-    --color-primary-200: 113 113 122;
-    --color-primary-300: 113 113 122;
-    --color-primary-400: 82 82 91;
-    --color-primary-500: 82 82 91;
-    --color-primary-600: 63 63 70;
-    --color-primary-700: 63 63 70;
-    --color-primary-800: 39 39 42;
-    --color-primary-900: 24 24 27;
-    --color-primary-950: 9 9 11;
-
-    --color-secondary: 180 83 9;
-  }
+  --color-secondary: 180 83 9;
 }
 
 .dark {

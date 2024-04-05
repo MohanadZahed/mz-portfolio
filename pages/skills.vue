@@ -32,6 +32,6 @@ import { professionalSkillsTranslations } from '~/translations/en/professional-s
 import { webDevelopmentTools } from '~/constants';
 
 definePageMeta({
-  title: 'skills'
+  title: 'skills' + ' | Angular | SAP Composable Storefront | SAP Spartacus | Vue | Nuxt'
 })
 </script>
