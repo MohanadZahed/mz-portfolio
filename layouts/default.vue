@@ -25,7 +25,7 @@ const title = computed(() => `Mohanad Zahed | ${t(route.meta.title)}`);
   ogTitle: title,
   ogDescription: description,
   ogImage: '/logo.png',
-  ogUrl: 'https://mz-portfolio-lyart.vercel.app',
+  ogUrl: 'https://www.mohanadzahed.com',
   twitterTitle: title,
   twitterDescription: description,
   twitterImage: '/logo.png',

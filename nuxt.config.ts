@@ -7,10 +7,10 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   site: {
-    url: 'https://mz-portfolio-lyart.vercel.app',
+    url: 'https://www.mohanadzahed.com',
   },
   i18n: {
-    baseUrl: 'https://mz-portfolio-lyart.vercel.app',
+    baseUrl: 'https://www.mohanadzahed.com',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
