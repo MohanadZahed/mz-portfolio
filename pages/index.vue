@@ -1,11 +1,11 @@
 <template>
   <div>
     <about />
-
-    <div class="my-14">
+    <UDivider class="py-10"/>
+    <div>
       <experience-list />
     </div>
-
+    <UDivider class="py-10"/>
     <projects-list :limit="3"/>
     <link-compoent :link="{isInternal: true, title: $t('viewAllProjects'), url: '/projects'}"/>
   </div>

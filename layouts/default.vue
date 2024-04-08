@@ -1,7 +1,7 @@
 <template>
-  <div class="md:grid md:grid-cols-6 gap-14 lg:gap-2 md:container mx-auto md:px-7 min-h-dvh">
+  <div class="md:flex md:container mx-auto md:px-7 min-h-dvh">
     <header-component />
-    <div class="col-span-4 md:py-24 pb-16 mb-16 md:mb-0 content-wrapper">
+    <div class="flex-1 md:pl-10 lg:pl-16 md:py-24 pb-16 mb-16 md:mb-0 content-wrapper">
       <slot />
     </div>
   </div>
@@ -74,9 +74,9 @@ body {
 
 body {
   @apply text-primary-500;
-  background: rgb(250,240,230);
   /*background: linear-gradient(156deg, rgba(250,240,230,1) 0%, rgba(255,251,248,1) 100%);*/
-  background: linear-gradient(156deg,#bae6fd, #f0f9ff);
+  /*background: linear-gradient(156deg,#bae6fd, #f0f9ff);*/
+  background: #fffcfb;
 }
 
 .dark body {
