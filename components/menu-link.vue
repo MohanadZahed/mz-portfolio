@@ -1,7 +1,9 @@
 <template>
   <NuxtLink :to="localPath(link.url)" class="link group flex items-center py-3" active-class="active">
-    <span class="nav-indicator mr-4 h-px w-8 bg-primary-500 transition-all motion-reduce:transition-none"></span>
+    <UIcon :name="'i-ic-baseline-less-than'" dynamic class="bracket nav-text text-xl font-bold uppercase tracking-widest text-primary-500"/>
     <span class="nav-text text-xs font-bold uppercase tracking-widest text-primary-500">{{ $t(link.title) }}</span>
+    <UIcon :name="'i-mdi-slash-forward'" dynamic class="bracket nav-text text-lg font-bold uppercase tracking-widest text-primary-500"/>
+    <UIcon :name="'i-ic-baseline-greater-than'" dynamic class="bracket right-bracket nav-text text-xl font-bold uppercase tracking-widest text-primary-500"/>
   </NuxtLink>
 </template>
 
@@ -35,6 +37,19 @@ a {
     .nav-text {
       @apply text-secondary;
     }
+
+    .bracket {
+      opacity: 1;
+    }
   }
+}
+
+.bracket {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.right-bracket {
+  transform: translateX(-0.5rem);
 }
 </style>

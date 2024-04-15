@@ -16,6 +16,7 @@ const props = defineProps<{
 
 <style scoped lang="scss">
 a {
+  transition: all 250ms;
   &.active {
     @apply bg-secondary/10;
 
