@@ -73,16 +73,7 @@ body {
 }
 
 body {
-  @apply text-primary-500;
-  /*background: linear-gradient(156deg, rgba(250,240,230,1) 0%, rgba(255,251,248,1) 100%);*/
-  /*background: linear-gradient(156deg,#bae6fd, #f0f9ff);*/
-  background: #fffcfb;
-}
-
-.dark body {
-  /*background: rgb(15,24,45);
-  background: linear-gradient(156deg, rgba(15,24,45,1) 0%, rgba(28,44,82,1) 100%);*/
-  background-color: #121C36;
+  @apply text-primary-500 bg-body;
 }
 
 @media (max-width: 767px) {

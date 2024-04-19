@@ -23,6 +23,7 @@ module.exports = {
                 primary: 'rgb(var(--color-primary) / <alpha-value>)',
                 secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
                 header: 'rgb(var(--color-header-tw) / <alpha-value>)',
+                body: 'rgb(var(--color-body) / <alpha-value>)',
             }
         },
     },
