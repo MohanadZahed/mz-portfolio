@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <ul class="flex flex-col">
-      <li v-for="link in menuLinks" :key="link.title" :class="{ active: isLinkActive(link.url) }">
+      <li v-for="link in menuLinks" :key="link.title" :class="{ active: isLinkActive(link.url) }" class="flex justify-between items-center">
         <menu-link :link="link"/>
       </li>
     </ul>
@@ -27,10 +27,12 @@ $timing: 250ms;
 $transition: $timing ease all;
 
 .navbar{
+  margin-right: -1.5rem;
   ul{
     position: relative;
   }
   li{
+    height: 45px;
     &:last-child{
       &:before{
         content: '';

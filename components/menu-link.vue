@@ -5,6 +5,8 @@
     <UIcon :name="'i-mdi-slash-forward'" dynamic class="bracket nav-text text-lg font-bold uppercase tracking-widest text-primary-500"/>
     <UIcon :name="'i-ic-baseline-greater-than'" dynamic class="bracket right-bracket nav-text text-xl font-bold uppercase tracking-widest text-primary-500"/>
   </NuxtLink>
+  <div class="rounding">
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -51,5 +53,52 @@ a {
 
 .right-bracket {
   transform: translateX(-0.5rem);
+}
+
+.rounding {
+  background-color: #121C36;
+  height: 80px;
+  width: 40px;
+  position: relative;
+  /*transform: translateX(24px);*/
+  /*display: none;*/
+  transform-origin: right center;
+  transform: scaleX(0);
+
+  &:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -23px;
+    /*border-bottom-right-radius: 23px;*/
+    @apply bg-header
+  }
+
+  &:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: -17px;
+    /*border-top-right-radius: 23px;*/
+    @apply bg-header
+  }
+}
+
+.active {
+  .rounding {
+    transition: all 250ms;
+    transform: scaleX(1);
+    opacity: 1;
+
+    &:before {
+      border-bottom-right-radius: 23px;
+    }
+
+    &:after {
+      border-top-right-radius: 23px;
+    }
+  }
 }
 </style>
