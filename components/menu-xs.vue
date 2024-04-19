@@ -1,5 +1,5 @@
 <template>
-  <nav class="z-50 fixed inset-x-0 bottom-0 w-full rounded-t-xl bg-header overflow-hidden">
+  <nav class="z-50 fixed inset-x-0 bottom-0 w-full bg-header overflow-hidden">
     <ul class="flex items-center">
       <li v-for="link in menuLinks" :key="link.title" class="flex-1" :class="{ active: isLinkActive(link.url) }">
         <menu-link-xs :link="link"/>
@@ -21,7 +21,7 @@ const isLinkActive = (url) => {
 
 <style scoped lang="scss">
 nav {
-  box-shadow: 0px -5px 7px -4px rgba(0,0,0,0.84);
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.30), 0 2px 6px 4px rgba(0, 0, 0, 0.40);;
 }
 
 $borderRadius: 10px;

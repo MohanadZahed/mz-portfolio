@@ -38,13 +38,29 @@ $transition: $timing ease all;
         opacity: 0;
         z-index: -1;
         top: 0;
-        left: -1rem;
-        width: 100%;
+        left: -0.5rem;
+        width: 120%;
         height: $linkHeight;
-        border-radius: $borderRadius * 1.75;
+        /*border-radius: $borderRadius * 1.75;*/
         transition: $timing ease-out all;
 
-        @apply bg-secondary/20 dark:bg-secondary/10
+        /*background-color: #fffcfb;*/
+        background-color: #121C36;
+        @apply  rounded-r-md
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        top: 0;
+        left: -0.5rem;
+        width: 0.3rem;
+        height: $linkHeight;
+        transition: $timing ease-out all;
+
+        @apply bg-secondary
       }
     }
 
@@ -52,21 +68,25 @@ $transition: $timing ease all;
       &:first-child:nth-last-child(#{$i}),
       &:first-child:nth-last-child(#{$i}) ~ li {
         &.active {
-          ~ li:last-child:before {
+          ~ li:last-child:before,
+          ~ li:last-child:after {
             opacity: 1;
           }
         }
-        &:last-child.active:before {
+        &:last-child.active:before,
+        &:last-child.active:after{
           opacity: 1;
         }
         @for $j from 1 to $i {
           &:nth-child(#{$j}).active, {
-            ~ li:last-child:before {
+            ~ li:last-child:before,
+            ~ li:last-child:after{
               top: calc(100% / $i) * ($j - 1);
             }
           }
         }
-        &:last-child.active:before, {
+        &:last-child.active:before,
+        &:last-child.active:after{
           top: calc(100% / $i) * ($i - 1);
         }
       }

@@ -80,8 +80,9 @@ body {
 }
 
 .dark body {
-  background: rgb(15,24,45);
-  background: linear-gradient(156deg, rgba(15,24,45,1) 0%, rgba(28,44,82,1) 100%);
+  /*background: rgb(15,24,45);
+  background: linear-gradient(156deg, rgba(15,24,45,1) 0%, rgba(28,44,82,1) 100%);*/
+  background-color: #121C36;
 }
 
 @media (max-width: 767px) {
