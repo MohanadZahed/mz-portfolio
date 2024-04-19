@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="localPath(link.url)" class="link group flex items-center py-3" active-class="active">
+  <NuxtLink :to="localPath(link.url)" class="link group flex items-center py-3 flex-1" active-class="active">
     <UIcon :name="'i-ic-baseline-less-than'" dynamic class="bracket nav-text text-xl font-bold uppercase tracking-widest text-primary-500"/>
     <span class="nav-text text-xs font-bold uppercase tracking-widest text-primary-500">{{ $t(link.title) }}</span>
     <UIcon :name="'i-mdi-slash-forward'" dynamic class="bracket nav-text text-lg font-bold uppercase tracking-widest text-primary-500"/>
