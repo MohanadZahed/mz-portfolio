@@ -73,6 +73,7 @@ body {
 }
 
 body {
+  width: 100vw;
   @apply text-primary-500 bg-body;
 }
 
