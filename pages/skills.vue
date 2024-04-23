@@ -2,7 +2,7 @@
   <div>
     <UCard class="mb-5">
       <template #header>
-        <h3 class="text-primary-800">PROFESSIONAL</h3>
+        <h3 class="text-primary-800">Professional</h3>
       </template>
 
       <ul class="mt-2 pl-3.5 text-sm leading-normal list-disc grid sm:grid-cols-2" aria-label="Activities">
@@ -14,7 +14,7 @@
 
     <UCard class="mb-5">
       <template #header>
-        <h3 class="text-primary-800">WEB DEVELOPMENT</h3>
+        <h3 class="text-primary-800">Web Development</h3>
       </template>
 
       <ul class="mt-2 pl-3.5 text-sm leading-normal list-disc grid sm:grid-cols-2" aria-label="Activities">

@@ -2,19 +2,19 @@
   <div>
     <UCard>
       <template #header>
-        <h3 class="text-primary-800">TECHNICAL</h3>
+        <h3 class="text-primary-800">Technical</h3>
       </template>
 
       <UAccordion :items="items" :ui="{ wrapper: 'flex flex-col w-full' }" multiple>
         <template #default="{ item, index, open }">
-          <UButton color="gray" variant="ghost" class="border-b border-gray-200 dark:border-gray-700" :ui="{ rounded: 'rounded-none', padding: { sm: 'p-5' } }">
+          <UButton color="gray" variant="ghost" class="border-b border-gray-200 dark:border-gray-700 px-0 py-3 sm:p-5" :ui="{ rounded: 'rounded-none' }">
             <template #leading>
               <div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center -my-1">
                 <UIcon dynamic :name="item.icon" class="w-4 h-4 text-white dark:text-gray-900" />
               </div>
             </template>
 
-            <span class="truncate">{{ item.label }}</span>
+            <span class="truncate text-base lg:text-lg">{{ item.label }}</span>
 
             <template #trailing>
               <UIcon
@@ -30,20 +30,20 @@
         </template>
 
         <template #frontend>
-          <div class="flex gap-7 flex-wrap px-5">
-            <tech-skill-element v-for="skill in techSkillList.Frontend" :key="skill.name" :skill="skill" class="tech-skill-element "/>
+          <div class="skills-wrapper">
+            <tech-skill-element v-for="skill in techSkillList.Frontend" :key="skill.name" :skill="skill" class="tech-skill-element"/>
           </div>
         </template>
 
         <template #backend>
-          <div class="flex gap-7 flex-wrap px-5">
-            <tech-skill-element v-for="skill in techSkillList.Backend" :key="skill.name" :skill="skill" class="tech-skill-element "/>
+          <div class="skills-wrapper">
+            <tech-skill-element v-for="skill in techSkillList.Backend" :key="skill.name" :skill="skill" class="tech-skill-element"/>
           </div>
         </template>
 
         <template #devops>
-          <div class="flex gap-7 flex-wrap px-5">
-            <tech-skill-element v-for="skill in techSkillList.DevOps" :key="skill.name" :skill="skill" class="tech-skill-element "/>
+          <div class="skills-wrapper">
+            <tech-skill-element v-for="skill in techSkillList.DevOps" :key="skill.name" :skill="skill" class="tech-skill-element"/>
           </div>
         </template>
       </UAccordion>
@@ -83,14 +83,15 @@ const items = [{
   @apply w-full;
 }
 
-@media screen and (min-width: 500px) {
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(121px, 1fr));
+  @apply gap-8 sm:px-5 my-6;
+}
 
-  .tech-skill-element {
-    @apply w-5/12;
-
-    &:nth-child(even) {
-      margin-left: auto;
-    }
+@media screen and (min-width: 1024px) {
+  .skills-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
   }
 }
 
