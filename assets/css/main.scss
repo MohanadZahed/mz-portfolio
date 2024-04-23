@@ -76,3 +76,7 @@ h4, .h4 {
 h5, .h5 {
   @apply text-lg sm:text-xl
 }
+
+li::marker {
+  @apply text-secondary;
+}

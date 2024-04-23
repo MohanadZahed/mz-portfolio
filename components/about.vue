@@ -42,7 +42,7 @@
       <link-compoent :link="{title: 'mzahed-p@outlook.com', url: 'mailto:mzahed-p@outlook.com', isTargetBlank: true}"/>
     </div>
     <div class="info-wrapper">
-      <UIcon name="i-brandico-linkedin-rect" dynamic class='icon' />
+      <UIcon name="i-jam-linkedin-square" dynamic class='icon' />
       <link-compoent :link="{title: 'www.linkedin.com/in/m-zahed', url: 'https://www.linkedin.com/in/m-zahed', isTargetBlank: true}"/>
     </div>
   </div>
@@ -54,7 +54,7 @@
 }
 
 .icon {
-  @apply min-h-4 min-w-4 mt-1
+  @apply min-h-4 min-w-4 mt-1 text-secondary
 }
 
 </style>
