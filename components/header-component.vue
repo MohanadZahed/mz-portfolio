@@ -2,7 +2,7 @@
   <header
       class="z-50 mb-10 md:mb-0 col-span-2 sticky top-0  md:max-h-screen  md:py-24  w-full md:w-auto"
   >
-    <div class="header-upper-part bg-header md:pr-6 py-2 md:py-0 rounded-b-lg justify-between md:items-start items-center md:flex-col flex md:h-full" :class="{ 'is-hidden': isHidden, 'not-on-top': !isOnTop }">
+    <div class="header-upper-part bg-header md:pr-6 py-2 md:py-0 justify-between md:items-start items-center md:flex-col flex md:h-full" :class="{ 'is-hidden': isHidden, 'not-on-top': !isOnTop }">
       <div>
         <div class="logo-wrapper">
           <Logo />
