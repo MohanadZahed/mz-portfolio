@@ -74,7 +74,7 @@ body {
 
 body {
   width: 100vw;
-  @apply text-primary-500 bg-body;
+  @apply text-primary-500 bg-body overflow-x-hidden;
 }
 
 @media (max-width: 767px) {
