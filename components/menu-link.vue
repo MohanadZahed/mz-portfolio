@@ -18,6 +18,8 @@ const props = defineProps<{
 
 <style scoped lang="scss">
 a {
+  position: relative;
+  z-index: 9999;
   &:hover,
   &:focus-visible {
     .nav-indicator {

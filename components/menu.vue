@@ -43,13 +43,12 @@ $transition: $timing ease all;
       content: '';
       position: absolute;
       opacity: 0;
-      z-index: -1;
+      z-index: 1;
       top: 0;
       left: -5px;
-      width: 103%;
+      width: calc(100% + 5px);
       height: $linkHeight;
       transition: $timing ease-out all;
-      padding-right: 2px;
       @apply rounded-r-md bg-body
     }
 
@@ -74,7 +73,7 @@ $transition: $timing ease all;
         height: 2.5rem;
         position: absolute;
         top: calc($linkHeight / 2) * -1;
-        border-bottom-right-radius: 23px;
+        border-bottom-right-radius: 18px;
         @apply bg-header
       }
 
@@ -84,7 +83,7 @@ $transition: $timing ease all;
         height: 40px;
         position: absolute;
         bottom: calc($linkHeight / 2) * -1;
-        border-top-right-radius: 23px;
+        border-top-right-radius: 18px;
         @apply bg-header
       }
     }

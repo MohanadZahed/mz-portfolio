@@ -1,8 +1,8 @@
 <template>
   <header
-      class="z-50 mb-10 md:mb-0 col-span-2 sticky top-0  md:max-h-screen  md:py-24  w-full md:w-auto"
+      class=" mb-10 md:mb-0 col-span-2 md:sticky md:z-50 md:top-0  md:max-h-screen md:py-24  md:h-full w-full md:w-auto"
   >
-    <div class="header-upper-part bg-header md:pr-6 py-2 md:py-0 justify-between md:items-start items-center md:flex-col flex md:h-full" :class="{ 'is-hidden': isHidden, 'not-on-top': !isOnTop }">
+    <div class="header-upper-part bg-header md:pl-7 md:pr-6 py-2 md:py-0 justify-between md:items-start items-center md:flex-col flex md:h-full" :class="{ 'is-hidden': isHidden, 'not-on-top': !isOnTop }">
       <div>
         <div class="logo-wrapper">
           <Logo />
@@ -66,8 +66,8 @@ const handleScroll = () => {
 <style scoped lang="scss">
 @media (min-width: 768px) {
   .header-upper-part {
-    clip-path: inset(-100vmax 0 -100vmax -100vmax);
-    box-shadow: 0 0 0 100vmax var(--color-header);
+    /*clip-path: inset(-100vmax 0 -100vmax -100vmax);
+    box-shadow: 0 0 0 100vmax var(--color-header);*/
   }
 
 }
