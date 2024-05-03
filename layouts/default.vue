@@ -1,6 +1,9 @@
 <template>
-  <div class="md:flex md:container mx-auto md:px-7 min-h-dvh">
-    <header-component />
+  <div class="md:flex mx-auto md:pr-7 min-h-dvh">
+    <div class="header-wrapper md:bg-header flex justify-end sticky z-50 top-0">
+      <header-component />
+    </div>
+
     <div class="flex-1 md:pl-10 lg:pl-16 md:py-24 pb-16 mb-16 md:mb-0 content-wrapper">
       <slot />
     </div>
@@ -82,4 +85,21 @@ body {
     @apply container px-3
   }
 }
+
+.content-wrapper {
+  flex: 1;
+  max-width: 980px;
+}
+
+.header-wrapper {
+  flex: 30% 0 0;
+  min-width: 18.75rem;
+}
+
+@media (min-width: 1024px) {
+  .header-wrapper {
+    min-width: 20.75rem;
+  }
+}
+
 </style>
