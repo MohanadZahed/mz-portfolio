@@ -157,7 +157,7 @@ export const projects: Project[] = [
 export const techSkillList: TechSkillList = {
     [TechGroup.FRONTEND]: [
         {
-            name: 'Angular 17',
+            name: 'Angular 18',
             skillLevel: SkillLevel.EXPERT,
         },
         {
